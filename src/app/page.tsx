@@ -212,13 +212,13 @@ export default function SleepSortStudio() {
               >
                 {isPlaying ? <Pause fill="currentColor" size={24} /> : <Play fill="currentColor" size={24} className="ml-1" />}
               </button>
-              <button onClick={reset} className="p-4 bg-slate-100 rounded-2xl hover:bg-slate-200 transition-colors text-slate-500 ml-4"><RotateCcw size={20} /></button>
+              <button onClick={reset} className="p-4 bg-slate-100 rounded-2xl hover:bg-slate-200 transition-colors text-slate-400 ml-4"><RotateCcw size={20} /></button>
             </div>
 
             <div className="flex-1 w-full text-center md:text-left">
-              <div className="flex items-center justify-between mono text-[10px] text-slate-400 uppercase font-black tracking-widest mb-3">
-                <span>Time Dilation</span>
-                <span className="text-indigo-600">x{speed.toFixed(1)}</span>
+              <div className="flex items-center justify-between mono text-[10px] text-slate-400 uppercase font-black tracking-widest mb-3 font-bold">
+                <span>時間膨張 (Time Dilation)</span>
+                <span className="text-indigo-600 font-bold">x{speed.toFixed(1)}</span>
               </div>
               <div className="flex gap-4 items-center">
                 <input type="range" min="0.5" max="5" step="0.1" value={speed} onChange={(e) => setSpeed(parseFloat(e.target.value))} className="flex-1 appearance-none bg-slate-100 h-1.5 rounded-full accent-indigo-600 cursor-pointer" />
@@ -241,7 +241,7 @@ export default function SleepSortStudio() {
           <div className="p-10 bg-white border border-slate-200 rounded-[3rem] shadow-lg">
             <div className="flex items-center gap-3 mb-8">
               <Lightbulb className="text-amber-500 w-5 h-5" />
-              <h2 className="font-black text-xs uppercase tracking-[0.2em] text-slate-400">Concept_Data</h2>
+              <h2 className="font-black text-xs uppercase tracking-[0.2em] text-slate-400">学習ガイド</h2>
             </div>
             <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100 mb-8">
               <h3 className="text-indigo-600 font-black mb-3 text-sm">Sleep Sort</h3>
@@ -265,8 +265,8 @@ export default function SleepSortStudio() {
           <div className="p-10 bg-[#0f172a] border border-slate-800 rounded-[3rem] flex-1 flex flex-col min-h-[450px] shadow-2xl">
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-3">
-                <Code2 className="text-slate-500 w-5 h-5" />
-                <h2 className="font-black text-[10px] uppercase tracking-widest text-slate-400">Source_Kernel</h2>
+                <Code2 className="text-slate-400 w-5 h-5" />
+                <h2 className="font-black text-[10px] uppercase tracking-widest text-slate-500">Python 実装例</h2>
               </div>
               <div className="w-2 h-2 rounded-full bg-indigo-500/50" />
             </div>
@@ -291,8 +291,8 @@ export default function SleepSortStudio() {
 
       <footer className="mt-20 border-t border-slate-200 py-16 text-center relative z-10">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
-          <Sun className="text-slate-200 w-8 h-8" />
-          <p className="text-[8px] mono text-slate-400 uppercase tracking-[0.8em]">Interactive_Learning_Series // Informatics_I</p>
+          <Sun className="text-slate-200 w-8 h-8 opacity-20" />
+          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.4em]">Fundamental Wisdom for the AI Era // Algorithm Literacy // しろいプログラミング教室</p>
         </div>
       </footer>
     </div>
